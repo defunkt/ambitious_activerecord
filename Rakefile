@@ -1,6 +1,6 @@
 require 'rake'
 
-Version = '0.1.2'
+Version = '0.1.3'
 
 begin
   require 'rubygems'
@@ -9,7 +9,7 @@ begin
   require 'echoe'
 
   Echoe.new('ambitious-activerecord') do |p|
-    p.dependencies  << 'activerecord >=1.15.0'
+    p.dependencies  << 'activerecord >=1.15.6'
     p.summary        = "An ambitious adapter for ActiveRecord"
     p.author         = 'Chris Wanstrath'
     p.email          = "chris@ozmm.org"
@@ -18,7 +18,7 @@ begin
     p.url            = "http://ambition.rubyforge.org/"
     p.test_pattern   = 'test/*_test.rb'
     p.version        = Version
-    p.dependencies  << 'ambition >=0.5.1'
+    p.dependencies  << 'ambition >=0.5.3'
   end
 
 rescue LoadError 
